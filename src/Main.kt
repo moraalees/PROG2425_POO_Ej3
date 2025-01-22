@@ -1,14 +1,23 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+fun main(){
+    val persona1 = Persona("Addisyn", 52.4, 1.55)
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+    println(persona1.saludar(persona1))
+    println(persona1.obtenerDesc(persona1))
+
+
+    val persona2 = Persona(58.8, 1.61)
+
+    println(persona2.saludar(persona2))
+    println(persona2.obtenerDesc(persona2))
+
+
+    val persona3 = Persona("YMCA", 105.4, 2.11)
+
+    println(persona3.saludar(persona3))
+    println(persona3.obtenerDesc(persona3))
+
+    val persona4 = Persona(60.2, 1.70)
+
+    println(persona4.saludar(persona4))
+    println(persona4.obtenerDesc(persona4))
 }
